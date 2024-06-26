@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SoftCompant.iml" filepath="$PROJECT_DIR$/.idea/SoftCompant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/compras/compras.iml" filepath="$PROJECT_DIR$/compras/compras.iml" />
+      <module fileurl="file://$PROJECT_DIR$/comuns/comuns.iml" filepath="$PROJECT_DIR$/comuns/comuns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contabilidade/contabilidade.iml" filepath="$PROJECT_DIR$/contabilidade/contabilidade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/estoque/estoque.iml" filepath="$PROJECT_DIR$/estoque/estoque.iml" />
+      <module fileurl="file://$PROJECT_DIR$/financeiro/financeiro.iml" filepath="$PROJECT_DIR$/financeiro/financeiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pessoas/pessoas.iml" filepath="$PROJECT_DIR$/pessoas/pessoas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/produtos/produtos.iml" filepath="$PROJECT_DIR$/produtos/produtos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vendas/vendas.iml" filepath="$PROJECT_DIR$/vendas/vendas.iml" />
+    </modules>
+  </component>
+</project>
