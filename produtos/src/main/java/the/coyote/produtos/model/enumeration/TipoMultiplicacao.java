@@ -1,4 +1,4 @@
-package the.coyote.comuns.model.enumeration;
+package the.coyote.produtos.model.enumeration;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 

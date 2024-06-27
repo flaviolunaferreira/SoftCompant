@@ -1,4 +1,4 @@
-package the.coyote.comuns.model.entity;
+package the.coyote.produtos.model.entity;
 
 import jakarta.persistence.*;
 import org.springframework.data.annotation.CreatedBy;

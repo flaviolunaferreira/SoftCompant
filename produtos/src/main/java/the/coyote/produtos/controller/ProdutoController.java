@@ -6,12 +6,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import io.swagger.v3.oas.annotations.Operation;
-import the.coyote.comuns.model.dto.Produtos.ListaSimplesDeProdutosDTO;
+import io.swagger.v3.oas.annotations.parameters.RequestBody;
+import the.coyote.produtos.model.dto.ListaSimplesDeProdutosDTO;
+import the.coyote.produtos.model.dto.RequestProdutoDTO;
+import the.coyote.produtos.model.dto.ResponseSaveProdutoDTO;
 import the.coyote.produtos.service.ProdutoService;
 
 
@@ -30,6 +34,14 @@ public class ProdutoController {
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
+    }
+
+    
+    @PostMapping("/")
+    @Operation(summary = "Cadastrar um novo produto.")
+    public ResponseEntity<ResponseSaveProdutoDTO> create(@RequestBody RequestProdutoDTO dto) {
+        System.out.println("Dados de entrada" + dto);
+        return ResponseEntity.ok().body(produtoService.saveProduto(dto));
     }
 
 }

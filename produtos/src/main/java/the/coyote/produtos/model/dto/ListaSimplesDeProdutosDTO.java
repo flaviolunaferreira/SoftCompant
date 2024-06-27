@@ -1,11 +1,12 @@
-package the.coyote.comuns.model.dto.Produtos;
+package the.coyote.produtos.model.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 import the.coyote.comuns.model.InfoSchemas;
-import the.coyote.comuns.model.entity.ProdutoEntity;
-import the.coyote.comuns.model.enumeration.UnidadeMedida;
-import the.coyote.comuns.model.enumeration.TipoMercadoria;
+import the.coyote.produtos.model.entity.ProdutoEntity;
+import the.coyote.produtos.model.enumeration.TipoMercadoria;
+import the.coyote.produtos.model.enumeration.UnidadeMedida;
+
 
 @Getter
 @Setter
@@ -17,9 +18,6 @@ public class ListaSimplesDeProdutosDTO {
 
     @Schema (description = "Código interno de controle da entidade", title =  "Id")
     private Long codigoInterno;
-
-    @Schema (description = "Código de registro da mercadoria, geralmente o GTIN, se a mercadoria não tiver GTIN, mandar o código da mercadoria", title =  "Código de Integração")
-	private String integracao;
 
 	@Schema(description = "Se é mercadoria, serviço, etc.")
 	private TipoMercadoria tipo;
@@ -35,7 +33,6 @@ public class ListaSimplesDeProdutosDTO {
 
     public ListaSimplesDeProdutosDTO(ProdutoEntity produto) {
         this.codigoInterno = produto.getId();
-        this.integracao = produto.getIntegracao();
         this.tipo = produto.getTipo();
         this.descricaoCompleta = produto.getDescricaoCompleta();
         this.ativa = produto.isAtiva();

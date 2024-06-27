@@ -1,4 +1,4 @@
-package the.coyote.comuns.model.enumeration;
+package the.coyote.produtos.model.enumeration;
 
 public enum UnidadeMedida {
 
